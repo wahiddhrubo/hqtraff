@@ -16,6 +16,16 @@ export default function Partners() {
       y: 20,
     },
   };
+  const textAnim = {
+    anim: {
+      x: "100%",
+      transition: {
+        // delay: 0.3,
+        duration: 0.5,
+        ease: "linear",
+      },
+    },
+  };
   const logos = [
     { id: 1, src: "/images/images-review-logo-1.svg", alt: "logos" },
     { id: 2, src: "/images/images-review-logo-2.svg", alt: "logos" },
@@ -67,14 +77,15 @@ export default function Partners() {
       },
     },
   };
+
   const styles = {
     primaryHeader:
-      "font-semibold lg:text-[40px] text-[28px] lg:mb-[42px] mb-2 ",
+      "font-semibold relative   w-fit overflow-hidden lg:text-[40px]  text-[28px] lg:mb-[42px] mb-2 ",
     logosDiv:
       " rounded-[5px] absolute flex-grow gap-[32px] p-[5px] flex  mt-[20px] mb-[120px] ",
     imgDiv: "lg:w-[150px] w-[42px] grid rounded-[5px] place-item-center ",
     secondaryHeader:
-      "font-semibold lg:text-[40px] text-[28px]  text-center lg:mb-[42px] mb-2 ",
+      "font-semibold lg:text-[40px] relative mx-auto  w-fit overflow-hidden text-[28px]  text-center lg:mb-[42px] mb-2 ",
     flexbox:
       "gap-[20px] mb-[120px] w-full flex flex-wrap justify-center mx-auto  ",
     rev: "relative bg-[#1A1A1A] py-[25px] text-center lg:text-[13px] text-[10px] px-[25px] w-[280px] lg:h-[300px] h-[200px] rounded-[5px] ",
@@ -84,7 +95,16 @@ export default function Partners() {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.primaryHeader}>Our reliable partners:</div>
+      <div className={styles.primaryHeader}>
+        {" "}
+        <motion.div
+          variants={textAnim}
+          viewport={{ once: true }}
+          whileInView="anim"
+          className="absolute w-full h-full z-10 bg-white"
+        ></motion.div>
+        Our reliable partners:
+      </div>
       <div className="relative h-[150px] overflow-hidden">
         <motion.div
           animate={partnerControls}
@@ -129,7 +149,15 @@ export default function Partners() {
           ))}
         </motion.div>
       </div>
-      <div className={styles.secondaryHeader}>They talk about us</div>
+      <div className={styles.secondaryHeader}>
+        {" "}
+        <motion.div
+          variants={textAnim}
+          whileInView="anim"
+          className="absolute w-full h-full z-10 bg-white"
+        ></motion.div>
+        They talk about us
+      </div>
       <div className={styles.flexbox}>
         {reviews.map((f) => (
           <motion.div

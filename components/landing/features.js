@@ -1,6 +1,16 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 export default function Features() {
+  const textAnim = {
+    anim: {
+      x: "100%",
+      transition: {
+        // delay: 0.3,
+        duration: 0.5,
+        ease: "linear",
+      },
+    },
+  };
   const variant = {
     anim: {
       opacity: 1,
@@ -62,7 +72,7 @@ export default function Features() {
       "relative lg:h-[815px] text-center text-white text-[16px] grid place-items-center ",
     bgImgDiv: "absolute w-full h-full ",
     heading:
-      "lg:text-[48px] text-[32px] font-semibold lg:leading-[82px] lg:mb-[16px] mt-[52px] ",
+      "lg:text-[48px] relative mx-auto   w-fit overflow-hidden  text-[32px] font-semibold lg:leading-[82px] lg:mb-[16px] mt-[52px] ",
     bgImg: "w-full object-cover h-full ",
     overlay: "absolute w-full bg-overlay h-full opacity-90 z-[5] ",
     flexbox:
@@ -82,7 +92,15 @@ export default function Features() {
       </div>
       <div className={styles.overlay}></div>
       <div className="z-10 w-[80%] ">
-        <div className={styles.heading}>Why Chose us?</div>
+        <div className={styles.heading}>
+          <motion.div
+            variants={textAnim}
+            viewport={{ once: true }}
+            whileInView="anim"
+            className="absolute w-full h-full z-10 bg-white"
+          ></motion.div>
+          Why Chose us?
+        </div>
         <div className={styles.flexbox}>
           {fea.map((f) => (
             <motion.div

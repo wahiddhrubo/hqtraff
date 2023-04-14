@@ -15,6 +15,16 @@ export default function Partners() {
       y: 20,
     },
   };
+  const textAnim = {
+    anim: {
+      x: "100%",
+      transition: {
+        // delay: 0.3,
+        duration: 0.5,
+        ease: "linear",
+      },
+    },
+  };
   const partners = [
     {
       id: "1",
@@ -87,7 +97,8 @@ export default function Partners() {
     },
   ];
   const styles = {
-    primaryHeader: "font-semibold lg:text-[40px] text-[28px] lg:mb-[50px] ",
+    primaryHeader:
+      "font-semibold relative w-fit overflow-hidden lg:text-[40px] text-[28px] lg:mb-[50px] ",
     flexDiv:
       "bg-[#1a1a1a] rounded-[5px] lg:flex-nowrap flex-wrap lg:h-[150px] gap-[25px] p-[5px] flex  my-[20px] ",
     imgDiv:
@@ -107,7 +118,16 @@ export default function Partners() {
   };
   return (
     <div className={styles.wrapper}>
-      <div className={styles.primaryHeader}>Our Service partners:</div>
+      <div className={styles.primaryHeader}>
+        {" "}
+        <motion.div
+          variants={textAnim}
+          viewport={{ once: true }}
+          whileInView="anim"
+          className="absolute w-full h-full z-10 bg-white"
+        ></motion.div>
+        Our Service partners:
+      </div>
       {partners.map((p) => (
         <motion.div
           whileInView="anim"

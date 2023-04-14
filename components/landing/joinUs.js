@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 export default function Partners() {
   const logos = [
     { id: 1, src: "/images/images-review-logo-1.svg", alt: "logos" },
@@ -46,7 +47,7 @@ export default function Partners() {
     textDix:
       "lg:w-[65%] w-[80%] mx-auto mb-[50px] text-[9px] lg:text-[16px] text-center  ",
     secondaryHeader:
-      "font-semibold lg:text-[40px] text-[28px] text-center lg:mb-[42px] mb-2 ",
+      "font-semibold relative mx-auto   w-fit overflow-hidden lg:text-[40px] text-[28px] text-center lg:mb-[42px] mb-2 ",
     flexbox:
       "gap-[20px] justify-center mb-[30px] w-full flex flex-wrap mx-auto  ",
     team: "relative bg-[#1A1A1A] py-[25px] text-[13px] px-[25px] w-[450px]  rounded-[5px] ",
@@ -63,10 +64,29 @@ export default function Partners() {
     icon: "",
   };
 
+  const textAnim = {
+    anim: {
+      x: "100%",
+      transition: {
+        // delay: 0.3,
+        duration: 0.5,
+        ease: "linear",
+      },
+    },
+  };
   return (
     <div className={styles.wrapper}>
       <div className={styles.textDix}>
-        <div className={styles.secondaryHeader}>Join and earn with us!</div>
+        <div className={styles.secondaryHeader}>
+          {" "}
+          <motion.div
+            variants={textAnim}
+            viewport={{ once: true }}
+            whileInView="anim"
+            className="absolute w-full h-full z-10 bg-white"
+          ></motion.div>
+          Join and earn with us!
+        </div>
         If you are a webmaster or an advertiser looking for a reliable network
         for cooperation, we are glad to welcome you to our team. Contact Us
       </div>
