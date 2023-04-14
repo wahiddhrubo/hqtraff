@@ -1,5 +1,21 @@
 import Image from "next/image";
+import { motion, useAnimation, useAnimationControls } from "framer-motion";
+import { useEffect } from "react";
 export default function Partners() {
+  const variant = {
+    anim: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeIn",
+      },
+    },
+    initial: {
+      opacity: 0,
+      y: 20,
+    },
+  };
   const logos = [
     { id: 1, src: "/images/images-review-logo-1.svg", alt: "logos" },
     { id: 2, src: "/images/images-review-logo-2.svg", alt: "logos" },
@@ -10,6 +26,10 @@ export default function Partners() {
     { id: 7, src: "/images/images-review-logo-7.svg", alt: "logos" },
     { id: 8, src: "/images/images-review-logo-8.svg", alt: "logos" },
   ];
+  const partnerControls = useAnimation();
+  useEffect(() => {
+    partnerControls.start("animate");
+  }, []);
   const reviews = [
     {
       id: 1,
@@ -36,32 +56,90 @@ export default function Partners() {
       img: "/images/images-review-logo-5.svg",
     },
   ];
+  const partnerControlsVariarnt = {
+    animate: {
+      x: "-75%",
+      transition: {
+        duration: 25,
+        ease: "linear",
+        repeat: Infinity,
+        // repeatType: "mirror",
+      },
+    },
+  };
   const styles = {
-    primaryHeader: "font-semibold text-[40px] mb-[42px] ",
-    flexDiv:
-      " rounded-[5px] flex-grow gap-[32px] p-[5px] flex  mt-[20px] mb-[120px] ",
-    imgDiv: "w-[10%] grid rounded-[5px] place-item-center ",
-    secondaryHeader: "font-semibold text-[40px] text-center mb-[42px] ",
-    flexbox: "gap-[20px] mb-[120px] w-full flex flex-wrap mx-auto  ",
-    rev: "relative bg-[#1A1A1A] py-[25px] text-center text-[13px] px-[25px] w-[280px] h-[300px] rounded-[5px] ",
+    primaryHeader:
+      "font-semibold lg:text-[40px] text-[28px] lg:mb-[42px] mb-2 ",
+    logosDiv:
+      " rounded-[5px] absolute flex-grow gap-[32px] p-[5px] flex  mt-[20px] mb-[120px] ",
+    imgDiv: "lg:w-[150px] w-[42px] grid rounded-[5px] place-item-center ",
+    secondaryHeader:
+      "font-semibold lg:text-[40px] text-[28px]  text-center lg:mb-[42px] mb-2 ",
+    flexbox:
+      "gap-[20px] mb-[120px] w-full flex flex-wrap justify-center mx-auto  ",
+    rev: "relative bg-[#1A1A1A] py-[25px] text-center lg:text-[13px] text-[10px] px-[25px] w-[280px] lg:h-[300px] h-[200px] rounded-[5px] ",
     reviewImg: "absolute bottom-[25px] inset-x-0 mt-auto mx-auto w-fit h-fit",
-    img: "mt-auto",
+    img: "mt-auto cursor-pointer hover:scale-125 transition-all ",
   };
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.primaryHeader}>Our reliable partners:</div>
-      <div className={styles.flexDiv}>
-        {logos.map((l) => (
-          <div key={l.id} className={styles.imgDiv}>
-            <Image src={l.src} width={100} className={styles.img} height={50} />
-          </div>
-        ))}
+      <div className="relative h-[150px] overflow-hidden">
+        <motion.div
+          animate={partnerControls}
+          variants={partnerControlsVariarnt}
+          className={styles.logosDiv}
+        >
+          {logos.map((l) => (
+            <div key={l.id} className={styles.imgDiv}>
+              <Image
+                onMouseEnter={() => partnerControls.stop("animate")}
+                onMouseLeave={() => partnerControls.start("animate")}
+                src={l.src}
+                width={100}
+                className={styles.img}
+                height={50}
+              />
+            </div>
+          ))}
+          {logos.map((l) => (
+            <div key={l.id} className={styles.imgDiv}>
+              <Image
+                onMouseEnter={() => partnerControls.stop("animate")}
+                onMouseLeave={() => partnerControls.start("animate")}
+                src={l.src}
+                width={100}
+                className={styles.img}
+                height={50}
+              />
+            </div>
+          ))}
+          {logos.map((l) => (
+            <div key={l.id} className={styles.imgDiv}>
+              <Image
+                onMouseEnter={() => partnerControls.stop("animate")}
+                onMouseLeave={() => partnerControls.start("animate")}
+                src={l.src}
+                width={100}
+                className={styles.img}
+                height={50}
+              />
+            </div>
+          ))}
+        </motion.div>
       </div>
       <div className={styles.secondaryHeader}>They talk about us</div>
       <div className={styles.flexbox}>
         {reviews.map((f) => (
-          <div key={f.id} className={styles.rev}>
+          <motion.div
+            variants={variant}
+            whileInView="anim"
+            initial="initial"
+            viewport={{ once: true }}
+            key={f.id}
+            className={styles.rev}
+          >
             <div className="mb-auto">{f.review}</div>
             <div className={styles.reviewImg}>
               <Image
@@ -71,7 +149,7 @@ export default function Partners() {
                 className={styles.img}
               />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

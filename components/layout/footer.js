@@ -2,19 +2,20 @@ import React from "react";
 import Image from "next/image";
 function Footer({ menu, lang }) {
   const styles = {
-    wrapper: "flex flex-wrap h-[720px  lg:px-[120px] bg-[#1A1A1A] text-white",
-    menu: "h-[645px] relative w-full flex content-center flex-wrap",
-    logoDiv: "w-[50%] relative z-10",
-    bgImg1: "absolute top-[35px] left-[-265px] ",
-    bgImg2: "absolute bottom-[-35px] right-[-110px] ",
-    lang: "w-[25%] relative z-10",
-    nav: "w-[25%] relative z-10",
-    heading: "text-[20px] font-semibold mb-[15px]",
-    link: "block mb-[8px]",
+    wrapper:
+      "flex flex-wrap lg:h-[720px] px-8  lg:px-[120px] bg-[#1A1A1A] text-white",
+    menu: "lg:h-[645px] h-[550px] relative w-full flex content-center flex-wrap",
+    logoDiv: "w-1/2 lg:w-[50%] relative z-10",
+    bgImg1: "absolute lg:block hidden top-[35px] left-[-265px] ",
+    bgImg2: "absolute lg:block hidden bottom-[-35px] right-[-110px] ",
+    lang: "w-full lg:w-[25%] my-10 lg:m-0 relative z-10",
+    nav: "w-full lg:w-[25%]  relative z-10",
+    heading: "lg:text-[20px] font-semibold mb-[15px]",
+    link: "block text-[12px] lg:text-[16px] mb-[8px]",
     language:
-      "block mb-[8px] font-semibold hover:text-white cursor-pointer w-fit text-[#6E6E6E]",
+      "block mb-[8px] font-semibold hover:text-white cursor-pointer lg:w-fit w-full text-[#6E6E6E]",
     copyright:
-      "mt-auto flex w-full h-[75px] content-center flex-wrap border-t-2 border-[#3A3A3A]  ",
+      "mt-auto flex w-full h-[75px] text-[12px] lg:text-[16px] content-center flex-wrap border-t-2 border-[#3A3A3A]  ",
     mail: " ml-auto w-fit",
   };
   return (

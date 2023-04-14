@@ -43,13 +43,15 @@ export default function Partners() {
   ];
   const styles = {
     wrapper: "mt-[180px]",
-    textDix: "w-[65%] mx-auto mb-[50px] text-center  ",
-    secondaryHeader: "font-semibold text-[40px] text-center mb-[42px] ",
+    textDix:
+      "lg:w-[65%] w-[80%] mx-auto mb-[50px] text-[9px] lg:text-[16px] text-center  ",
+    secondaryHeader:
+      "font-semibold lg:text-[40px] text-[28px] text-center lg:mb-[42px] mb-2 ",
     flexbox:
       "gap-[20px] justify-center mb-[30px] w-full flex flex-wrap mx-auto  ",
     team: "relative bg-[#1A1A1A] py-[25px] text-[13px] px-[25px] w-[450px]  rounded-[5px] ",
     reviewImg: "absolute bottom-0 inset-x-0 mt-auto mx-auto w-fit h-fit",
-    btn: "block px-[50px] mx-auto my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
+    btn: "block px-[50px] relative overflow-hidden group mx-auto my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
     img: "mt-auto",
     teamTitle: "font-semibold mb-[30px] text-[28px] ",
     member: "flex  mb-[42px] gap-[16px] ",
@@ -105,7 +107,12 @@ export default function Partners() {
         ))}
       </div>
       <Link href="/" className={styles.btn}>
-        Contact Us
+        <div className=" text-white transition-all duration-350 group-hover:translate-x-0 translate-x-[-100%] flex px-[50px] flex-wrap content-center font-light text-[25px] justify-center absolute inset-0 w-full h-full">
+          {" >"}
+        </div>
+        <span className="block transition-all duration-350 group-hover:translate-x-[1000%]">
+          Contact Us
+        </span>
       </Link>
     </div>
   );

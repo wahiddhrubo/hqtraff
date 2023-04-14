@@ -2,13 +2,15 @@ import Image from "next/image";
 export default function About() {
   const styles = {
     wrapper:
-      "relative h-[720px] text-white bg-overlay  text-[24px] leading-[1.5] grid place-items-center ",
-    flexbox: "lg:px-[120px]  gap-[50px] relative my-auto  flex z-10",
+      "relative lg:h-[720px] text-white bg-overlay  lg:text-[24px] leading-[1.5] grid place-items-center ",
+    flexbox:
+      "lg:px-[120px] py-20 px-8 lg:p-0 text-center lg:text-left gap-[50px] relative my-auto lg:flex-nowrap flex-wrap flex z-10",
     bgImgDiv: "absolute z-[2] left-[-85px] top-[-110px] ",
-    textDiv: " w-[820px] relative h-fit my-auto ",
-    heading: "text-[52px] font-semibold leading-[82px] mb-[16px] ",
+    textDiv: " lg:w-[820px]  relative h-fit my-auto ",
+    heading:
+      "lg:text-[52px] text-[32px] font-semibold lg:leading-[82px] mb-[16px] ",
     btn: "block px-[50px] my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
-    imgDiv: "",
+    imgDiv: "px-10 lg:p-0",
     img: "",
   };
   return (

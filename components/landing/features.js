@@ -1,5 +1,20 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 export default function Features() {
+  const variant = {
+    anim: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeIn",
+      },
+    },
+    initial: {
+      opacity: 0,
+      y: 20,
+    },
+  };
   const fea = [
     {
       id: 1,
@@ -46,12 +61,14 @@ export default function Features() {
     wrapper:
       "relative lg:h-[815px] text-center text-white text-[16px] grid place-items-center ",
     bgImgDiv: "absolute w-full h-full ",
-    heading: "text-[48px] font-semibold leading-[82px] mb-[16px] ",
+    heading:
+      "lg:text-[48px] text-[32px] font-semibold lg:leading-[82px] lg:mb-[16px] mt-[52px] ",
     bgImg: "w-full object-cover h-full ",
     overlay: "absolute w-full bg-overlay h-full opacity-90 z-[5] ",
-    flexbox: "gap-[20px] w-full flex flex-wrap mx-auto justify-center ",
-    fea: "bg-[#1A1A1A] flex flex-wrap content-center justify-center px-[30px] w-[250px] h-[250px] rounded-[5px] ",
-    img: "mx-auto mb-[35px]",
+    flexbox:
+      "gap-[20px] mb-[52px] mt-[16px] lg:m-0 w-full flex flex-wrap mx-auto justify-center ",
+    fea: "bg-[#1A1A1A] flex flex-wrap w-[40%] text-[10px] lg:text-[16px] px-3 py-5 lg:py-0 flex-wrap content-center justify-center lg:px-[30px] lg:w-[250px] lg:h-[250px] rounded-[5px] ",
+    img: "mx-auto block w-[40%] lg:w-[95px] mb-3 lg:mb-[35px]",
   };
   return (
     <div className={styles.wrapper}>
@@ -68,15 +85,22 @@ export default function Features() {
         <div className={styles.heading}>Why Chose us?</div>
         <div className={styles.flexbox}>
           {fea.map((f) => (
-            <div key={f.id} className={styles.fea}>
+            <motion.div
+              whileInView="anim"
+              variants={variant}
+              viewport={{ once: true }}
+              initial="initial"
+              key={f.id}
+              className={styles.fea}
+            >
               <Image
                 src={f.img}
                 width={96}
                 height={96}
                 className={styles.img}
               />
-              {f.title}
-            </div>
+              <div className="w-full">{f.title}</div>
+            </motion.div>
           ))}
         </div>
       </div>

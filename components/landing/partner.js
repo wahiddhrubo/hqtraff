@@ -1,5 +1,20 @@
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
 export default function Partners() {
+  const variant = {
+    anim: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeIn",
+      },
+    },
+    initial: {
+      opacity: 0,
+      y: 20,
+    },
+  };
   const partners = [
     {
       id: "1",
@@ -72,19 +87,20 @@ export default function Partners() {
     },
   ];
   const styles = {
-    primaryHeader: "font-semibold text-[40px] mb-[50px] ",
+    primaryHeader: "font-semibold lg:text-[40px] text-[28px] lg:mb-[50px] ",
     flexDiv:
       "bg-[#1a1a1a] rounded-[5px] lg:flex-nowrap flex-wrap lg:h-[150px] gap-[25px] p-[5px] flex  my-[20px] ",
-    imgDiv: "bg-white w-[18%] grid rounded-[5px] place-item-center ",
-    img: "w-[80px] mx-auto my-auto ",
-    textDiv: "w-[50%] text-[13px] h-fit my-auto ",
+    imgDiv:
+      "bg-white lg:w-[18%] w-full h-[150px] grid rounded-[5px] place-item-center ",
+    img: "w-[125px] mx-auto my-auto ",
+    textDiv: "lg:w-[50%] w-full text-[13px] h-fit my-auto ",
     heading: "font-medium text-[20px] mb-[8px]",
     offerDiv:
-      "w-[20%] text-[14px] border-x-2 border-r-white border-l-[#898989] text-center flex justify-center flex-wrap content-center",
+      "lg:w-[20%] w-full text-[14px] border-x-2 border-r-white border-l-[#898989] text-center flex justify-center flex-wrap content-center",
     promoCodeDiv:
-      "w-[8%] flex cursor-pointer justify-center content-center flex-wrap text-center",
+      "lg:w-[8%] w-full flex  justify-center content-center flex-wrap text-center",
     btnDiv:
-      "w-[13%] flex justify-center content-center rounded-[5px] flex-wrap bg-[#393939] font-semibold px-[32px] text-center ",
+      "lg:w-[13%] w-full relative group overflow-hidden h-[52px] lg:h-full flex justify-center content-center rounded-[5px] flex-wrap bg-[#393939] font-semibold px-[32px] text-center ",
   };
   const copyToClipBoard = (text) => {
     navigator.clipboard.writeText(text);
@@ -93,13 +109,20 @@ export default function Partners() {
     <div className={styles.wrapper}>
       <div className={styles.primaryHeader}>Our Service partners:</div>
       {partners.map((p) => (
-        <div key={p.id} className={styles.flexDiv}>
+        <motion.div
+          whileInView="anim"
+          variants={variant}
+          initial="initial"
+          viewport={{ once: true }}
+          key={p.id}
+          className={styles.flexDiv}
+        >
           <div className={styles.imgDiv}>
             <Image
               src={p.image}
-              width={100}
+              width={150}
               className={styles.img}
-              height={50}
+              height={75}
             />
           </div>
           <div className={styles.textDiv}>
@@ -107,16 +130,23 @@ export default function Partners() {
             {p.description}
           </div>
           <div className={styles.offerDiv}>{p.offer}</div>
-          <div
-            className={styles.promoCodeDiv}
-            onClick={() => copyToClipBoard(p.promo)}
-          >
-            <div>{p.promo}</div>
+          <div className={styles.promoCodeDiv}>
+            <div
+              className="h-fit cursor-pointer"
+              onClick={() => copyToClipBoard(p.promo)}
+            >
+              {p.promo}
+            </div>
           </div>
           <a href={p.link} className={styles.btnDiv}>
-            Go To The Site
+            <div className=" transition-all duration-350 group-hover:translate-x-0 translate-x-[-100%] flex px-[50px] flex-wrap content-center font-light text-[25px] justify-center absolute inset-0 w-full h-full">
+              {" >"}
+            </div>
+            <span className="block transition-all duration-350 group-hover:translate-x-[1000%]">
+              Go To The Site
+            </span>
           </a>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
