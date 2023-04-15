@@ -12,7 +12,7 @@ export default function Hero() {
       "lg:px-[120px] mb-[50px] gap-[50px] relative my-auto flex-wrap lg:flex-nowrap flex z-10",
     textDiv:
       " lg:w-[820px] mt-[120px] lg:mt-0 p-5 lg:p-0 text-center lg:text-left ",
-    heading: "lg:text-[62px] text-[32px] lg:leading-[82px] mb-[16px] ",
+    heading: "lg:text-[58px] text-[32px] lg:leading-[82px] mb-[16px] ",
     btn: "block relative overflow-hidden  group px-[50px] mx-auto lg:mx-0 my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
     imgDiv: "p-8 lg:p-0",
     img: "",

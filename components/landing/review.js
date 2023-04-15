@@ -88,7 +88,7 @@ export default function Partners() {
       "font-semibold lg:text-[40px] relative mx-auto  w-fit overflow-hidden text-[28px]  text-center lg:mb-[42px] mb-2 ",
     flexbox:
       "gap-[20px] mb-[120px] w-full flex flex-wrap justify-center mx-auto  ",
-    rev: "relative bg-[#1A1A1A] py-[25px] text-center lg:text-[13px] text-[10px] px-[25px] w-[280px] lg:h-[300px] h-[200px] rounded-[5px] ",
+    rev: "relative bg-[#1A1A1A] py-[25px] text-center lg:text-[13px] text-[10px] px-[25px] w-[255px] lg:h-[300px] h-[200px] rounded-[5px] ",
     reviewImg: "absolute bottom-[25px] inset-x-0 mt-auto mx-auto w-fit h-fit",
     img: "mt-auto cursor-pointer hover:scale-125 transition-all ",
   };
