@@ -29,6 +29,16 @@ export default function Hamburger({ menu }) {
               </span>
             </li>
           ))}
+          <Link target="_blank" href="https://hqtraff.affise.com/v2/sign/up">
+            <li className="bg-white w-fit mx-auto px-[48px] rounded-md mt-8 font-semibold text-black  py-[8px]">
+              Sign Up
+            </li>
+          </Link>
+          <Link target="_blank" href="https://hqtraff.affise.com/v2/sign/in">
+            <li className="bg-white w-fit mx-auto px-[48px] rounded-md mt-2  font-semibold text-black  py-[8px]">
+              Sign In
+            </li>
+          </Link>
         </ul>
       </nav>
     </div>

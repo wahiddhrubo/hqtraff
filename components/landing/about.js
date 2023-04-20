@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export default function About() {
+  const { t } = useTranslation();
   const styles = {
     wrapper:
       "relative lg:h-[720px] text-white bg-overlay  lg:text-[17px] leading-[1.5] grid place-items-center ",
@@ -58,7 +60,7 @@ export default function About() {
     },
   };
   return (
-    <div className={styles.wrapper}>
+    <div id="about" className={styles.wrapper}>
       <div className={styles.flexbox}>
         <div className={styles.textDiv}>
           <div className={styles.bgImgDiv}>
@@ -80,7 +82,7 @@ export default function About() {
                 variants={textAnim}
                 className="absolute w-full h-full z-10 bg-white"
               ></motion.div>
-              Who we are ?
+              {t("Who we are?")}
             </div>
             <motion.span
               variants={opacityVariant}
@@ -90,10 +92,9 @@ export default function About() {
                 variants={textAnim}
                 className="absolute w-full h-full z-10 bg-white"
               ></motion.div>
-              HQtraff is an affiliate program in the gambling vertical with its
-              own exclusive offers and more, founded by an arbitrage team with
-              extensive experience and expertise, which they are ready to share
-              with their partners.{" "}
+              {t(
+                "HQtraff is an affiliate program in the gambling vertical with its own exclusive offers and more, founded by an arbitrage team with extensive experience and expertise, which they are ready to share with their partners."
+              )}
             </motion.span>
           </motion.div>
         </div>

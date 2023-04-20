@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export default function Partners() {
+  const { t } = useTranslation();
   const variant = {
     anim: {
       opacity: 1,
@@ -34,7 +36,7 @@ export default function Partners() {
       offer: "-15% on the first payment",
       image: "/images/promo-1.svg",
       promo: "HQTRAFF",
-      link: "/",
+      link: "https://adheart.me/",
     },
     {
       id: "2",
@@ -44,7 +46,7 @@ export default function Partners() {
       offer: "-15% on the first payment",
       image: "/images/promo-2.svg",
       promo: "HQTRAFF",
-      link: "/",
+      link: "https://www.adspect.ai/ru/",
     },
     {
       id: "3",
@@ -53,7 +55,7 @@ export default function Partners() {
       offer: "Free on the first payment",
       image: "/images/promo-3.svg",
       promo: "HQTRAFF",
-      link: "/",
+      link: "https://www.adspy.com/",
     },
     {
       id: "4",
@@ -63,7 +65,7 @@ export default function Partners() {
       offer: "-30% on the first payment",
       image: "/images/promo-4.svg",
       promo: "HQTRAFF",
-      link: "/",
+      link: "https://cloaking.house/",
     },
     {
       id: "5",
@@ -73,7 +75,7 @@ export default function Partners() {
       offer: "-20% on the first payment",
       image: "/images/promo-5.svg",
       promo: "HQTRAFF",
-      link: "/",
+      link: "https://dolphin.ru.com/ru/",
     },
     {
       id: "6",
@@ -83,17 +85,77 @@ export default function Partners() {
       offer: "-20% on the first payment",
       image: "/images/promo-6.svg",
       promo: "HQTRAFF",
-      link: "/",
+      link: "https://anty.dolphin.ru.com/ru/",
     },
     {
       id: "7",
       name: "EPN.net",
       description:
         "Virtual cards 18 BIN of American banks, fit perfectly with advertising cabinets, keep a high span. Free cards in any quantity, transparent commissions - from 2%, team access, auto-replenishment.",
-      offer: "-20% on the first payment",
+      offer: "",
       image: "/images/promo-7.svg",
+      promo: "",
+      link: "https://epn.net/?ref=6Sb1MX",
+    },
+    {
+      id: "8",
+      name: "fbtool",
+      description: "An indispensable set of tools for working with advertising",
+      offer: "-20% on the first payment",
+      image: "/images/promo-8.png",
       promo: "HQTRAFF",
-      link: "/",
+      link: "https://fbtool.pro/",
+    },
+    {
+      id: "9",
+      name: "Indigo",
+      description:
+        "Indigo is an anti-detect browser for comfortable and safe work of solos and teams with all types of anti-fraud systems.",
+      offer: "50% cashback for renewal",
+      image: "/images/promo-9.svg",
+      promo: "HQTRAFF",
+      link: "https://indigobrowser.com/",
+    },
+    {
+      id: "10",
+      name: "iRent",
+      description:
+        "iRent Market is a bot for renting applications in the AppStore.",
+      offer: "+20% to the account",
+      image: "/images/promo-10.svg",
+      promo: "HQTRAFF",
+      link: "https://irent.market/",
+      dark: true,
+    },
+    {
+      id: "11",
+      name: "PWA.market",
+      description: "Multifunctional PWA app builder for any vertical",
+      offer: "-15% on the first payment",
+      image: "/images/promo-11.svg",
+      promo: "HQTRAFF-PWA",
+      link: "https://pwa.market/",
+      dark: true,
+    },
+    {
+      id: "12",
+      name: "Keitaro",
+      description:
+        "Keitaro is a universal tracker for online marketing. Work without cookies, reports based on 30+ metrics, domain parking, teamwork and many other options for profitable work.",
+      offer: "-20% on the first payment",
+      image: "/images/promo-12.svg",
+      promo: "HQTRAFF",
+      link: "https://keitaro.io/en/",
+    },
+    {
+      id: "13",
+      name: "Proxy.io",
+      description: "Individual proxies for solving any problems",
+      offer: "10% discount",
+      image: "/images/promo-13.png",
+      promo: "HQTRAFF",
+      link: "https://proxys.io/ru",
+      dark: true,
     },
   ];
   const styles = {
@@ -102,7 +164,7 @@ export default function Partners() {
     flexDiv:
       "bg-[#1a1a1a] rounded-[5px] lg:flex-nowrap flex-wrap lg:h-[150px] gap-[25px] p-[5px] flex  my-[20px] ",
     imgDiv:
-      "bg-white lg:w-[18%] w-full h-[150px] grid rounded-[5px] place-item-center ",
+      "bg-white lg:w-[18%] my-auto w-full h-[135px] grid rounded-[5px] place-item-center ",
     img: "w-[125px] mx-auto my-auto ",
     textDiv: "lg:w-[50%] w-full text-[13px] h-fit my-auto ",
     heading: "font-medium text-[20px] mb-[8px]",
@@ -117,7 +179,7 @@ export default function Partners() {
     navigator.clipboard.writeText(text);
   };
   return (
-    <div className={styles.wrapper}>
+    <div id="partner" className={styles.wrapper}>
       <div className={styles.primaryHeader}>
         {" "}
         <motion.div
@@ -126,7 +188,7 @@ export default function Partners() {
           whileInView="anim"
           className="absolute w-full h-full z-10 bg-white"
         ></motion.div>
-        Our Service partners:
+        {t("Our Service partners")}:
       </div>
       {partners.map((p) => (
         <motion.div
@@ -137,7 +199,11 @@ export default function Partners() {
           key={p.id}
           className={styles.flexDiv}
         >
-          <div className={styles.imgDiv}>
+          <div
+            className={
+              p.dark ? styles.imgDiv + " bg-[#1a1a1a] " : styles.imgDiv
+            }
+          >
             <Image
               src={p.image}
               width={150}
@@ -146,10 +212,10 @@ export default function Partners() {
             />
           </div>
           <div className={styles.textDiv}>
-            <div className={styles.heading}>{p.name} </div>
-            {p.description}
+            <div className={styles.heading}>{t(p.name)} </div>
+            {t(p.description)}
           </div>
-          <div className={styles.offerDiv}>{p.offer}</div>
+          <div className={styles.offerDiv}>{t(p.offer)}</div>
           <div className={styles.promoCodeDiv}>
             <div
               className="h-fit cursor-pointer"
@@ -158,12 +224,17 @@ export default function Partners() {
               {p.promo}
             </div>
           </div>
-          <a href={p.link} className={styles.btnDiv}>
+          <a
+            href={p.link}
+            rel="noreferrer"
+            target="_blank"
+            className={styles.btnDiv}
+          >
             <div className=" transition-all duration-350 group-hover:translate-x-0 translate-x-[-100%] flex px-[50px] flex-wrap content-center font-light text-[25px] justify-center absolute inset-0 w-full h-full">
               {" >"}
             </div>
             <span className="block transition-all duration-350 group-hover:translate-x-[1000%]">
-              Go To The Site
+              {t("Go To The Site")}
             </span>
           </a>
         </motion.div>

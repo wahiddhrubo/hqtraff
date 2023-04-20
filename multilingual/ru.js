@@ -1,4 +1,4 @@
-const t = {
+export const ru = {
   Home: "Home",
   "Who Are We?": "Who Are We?",
   "Why Chose Us": "Why Chose Us",
@@ -7,14 +7,17 @@ const t = {
   "Sign In": "Sign In",
   "Sign Up": "Sign Up",
   RU: "RU",
-  "Effectively monetize all types and sources of":
-    "Эффективно монетизировать все типы и источники ",
+  "Effectively monetize all": "Эффективно монетизировать все",
+  "types and": " типы и ",
+  "sources of": "источники ",
   traffic: "трафика",
   "Start earning today": "Начните зарабатывать сегодня",
   "Join Now": "Присоединяйтесь сейчас",
-  "Contact our manager after registration and get high":
-    "Свяжитесь с нашим менеджером после регистрации и получите высокие",
-  "rates on all offers.": "ставки на все предложения.",
+  "Contact our": "Свяжитесь с ",
+  manager: "менеджером",
+  "after registration and": "нашим  после регистрации и ",
+  "get high rates on all offers.":
+    "получите высокие ставки на все предложения.",
   "Who we are?": "Кто мы?",
   "HQtraff is an affiliate program in the gambling vertical with its own exclusive offers and more, founded by an arbitrage team with extensive experience and expertise, which they are ready to share with their partners.":
     "HQtraff - это партнерская программа в вертикали азартных игр с собственными эксклюзивными предложениями и многим другим, основанная арбитражной командой с большим опытом и знаниями, которыми они готовы поделиться со своими партнерами.",
@@ -31,19 +34,11 @@ const t = {
   "Only converting offers": "Только конвертирующие предложения",
   "Easy integration with any trackers": "Простая интеграция с любыми трекерами",
   "Our reliable partners:": "Наши надежные партнеры:",
-  "They talk about us": "Они говорят о нас",
+  "Reviews from our partners": "Отзывы наших партнеров",
   "We have been working with HQtraff since  2020 and are very satisfied with our cooperation. The guys have high-quality traffic that pays off, HQtraff is highly recommended!":
     "Мы работаем с HQtraff с 2020 года и очень довольны нашим сотрудничеством. У ребят качественный трафик, который окупается, HQtraff очень рекомендуем!",
-  "We have been working with HQtraff for a": "Мы работаем с HQtraff в течение",
-  "very long time, we approach our work":
-    "очень долгое время, мы подходим к нашей работе",
-  "creatively and responsibly. Only positive":
-    "творчески и ответственно. Только положительное",
-  "impression about our work, our products":
-    "впечатление о нашей работе, наши продукты",
-  "are available in pp for one of the best": "доступны в пп по одним из лучших",
-  "conditions on the market. We will be happy to continue working with you.":
-    "условиях на рынке. Мы будем рады продолжить сотрудничество с Вами.",
+  "We have been working with HQtraff for a very long time, we approach our work	creatively and responsibly. Only positive	impression about our work, our products	are available in pp for one of the best conditions on the market. We will be happy to continue working with you.":
+    "Мы работаем с HQtraff в течение очень долгое время, мы подходим к нашей работе  творчески и ответственно. Только положительное  впечатление о нашей работе, наши продукты  доступны в пп по одним из лучших условиях на рынке. Мы будем рады продолжить сотрудничество с Вами.",
   "Cooperation with HQtraff means pleasant and high-quality communication and fulfillment of all agreements. The guys always know what is needed to achieve our common goal and work fruitfully for the result. it’s a pleasure to work with them and see them develop from an arbitrage team into a full-fledged affiliate program. ":
     "Сотрудничество с HQtraff - это приятное и качественное общение и выполнение всех договоренностей. Ребята всегда знают, что нужно для достижения нашей общей цели и плодотворно работают на результат. с ними приятно работать и видеть, как из арбитражной команды они превращаются в полноценную партнерскую программу.",
   "A reliable tam, we have know the guys for a long time, they have extensive experience in the industry.":
@@ -131,4 +126,16 @@ const t = {
   "Our Services Partners": "Наши партнеры по оказанию услуг",
   "all right reserved": "все права защищены",
   "hqtraffpartners@gmail.com": "hqtraffpartners@gmail.com",
+  "An indispensable set of tools for working with advertising":
+    "Незаменимый набор инструментов для работы с рекламой",
+  "Indigo is an anti-detect browser for comfortable and safe work of solos and teams with all types of anti-fraud systems.":
+    "Indigo — браузер-антидетект для комфортной и безопасной работы соло и команд со всеми видами антифрод-систем.",
+  "iRent Market is a bot for renting applications in the AppStore.":
+    "iRent Market — бот для аренды приложений в AppStore.",
+  "Multifunctional PWA app builder for any vertical":
+    "Многофункциональный конструктор приложений PWA для любой вертикали",
+  "Keitaro is a universal tracker for online marketing. Work without cookies, reports based on 30+ metrics, domain parking, teamwork and many other options for profitable work.":
+    "Keitaro — универсальный трекер для интернет-маркетинга. Работа без куки, отчеты по 30+ метрикам, парковка домена, командная работа и множество других опций для выгодной работы.",
+  "Individual proxies for solving any problems":
+    "Индивидуальные прокси для решения любых задач",
 };

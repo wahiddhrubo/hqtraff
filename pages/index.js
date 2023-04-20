@@ -22,7 +22,12 @@ export default function Home() {
   const lang = [
     { id: 1, text: "RU", value: "russian" },
     { id: 2, text: "EN", value: "english" },
-    { id: 3, text: "UA", value: "arabic" },
+    { id: 3, text: "UK", value: "UK" },
+  ];
+  const socialHandler = [
+    { id: 1, img: "/images/ig.svg", link: "/" },
+    { id: 3, img: "/images/email.svg", link: "mailto:support@hqtraff.com" },
+    { id: 2, img: "/images/tg.svg", link: "https://t.me/hqtraff_news" },
   ];
   return (
     <div>
@@ -38,7 +43,7 @@ export default function Home() {
         <Partners />
         <JoinUs />
       </div>
-      <Footer menu={menu} lang={lang} />
+      <Footer menu={menu} lang={lang} socialHandler={socialHandler} />
     </div>
   );
 }

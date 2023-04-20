@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 export default function Features() {
+  const { t } = useTranslation();
   const textAnim = {
     anim: {
       x: "100%",
@@ -81,7 +83,7 @@ export default function Features() {
     img: "mx-auto block w-[40%] lg:w-[95px] mb-3 lg:mb-[35px]",
   };
   return (
-    <div className={styles.wrapper}>
+    <div id="features" className={styles.wrapper}>
       <div className={styles.bgImgDiv}>
         <Image
           src="/images/features-bg.png"
@@ -99,7 +101,7 @@ export default function Features() {
             whileInView="anim"
             className="absolute w-full h-full z-10 bg-white"
           ></motion.div>
-          Why Chose us?
+          {t("Why Chose us?")}
         </div>
         <div className={styles.flexbox}>
           {fea.map((f) => (
@@ -117,7 +119,7 @@ export default function Features() {
                 height={96}
                 className={styles.img}
               />
-              <div className="w-full">{f.title}</div>
+              <div className="w-full">{t(f.title)}</div>
             </motion.div>
           ))}
         </div>

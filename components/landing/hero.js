@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslation, Trans } from "react-i18next";
+
 export default function Hero() {
+  const { t, i18n } = useTranslation();
   const styles = {
     wrapper:
       "relative lg:h-[750px] text-white text-[16px] grid place-items-center ",
@@ -13,7 +16,7 @@ export default function Hero() {
     textDiv:
       " lg:w-[820px] mt-[120px] lg:mt-0 p-5 lg:p-0 text-center lg:text-left ",
     heading: "lg:text-[58px] text-[32px] lg:leading-[82px] mb-[16px] ",
-    btn: "block relative overflow-hidden  group px-[50px] mx-auto lg:mx-0 my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
+    btn: "block relative overflow-hidden  block transition-all duration-[550] hover:bg-reverse-primary-gradient px-[50px] mx-auto lg:mx-0 my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
     imgDiv: "p-8 lg:p-0",
     img: "",
   };
@@ -72,7 +75,7 @@ export default function Hero() {
     },
   };
   return (
-    <div className={styles.wrapper}>
+    <div id="top" className={styles.wrapper}>
       <div className={styles.bgImgDiv}>
         <Image
           src="/images/hero-bg.png"
@@ -99,7 +102,7 @@ export default function Hero() {
                 variants={textAnim}
                 className="absolute hidden lg:block w-full h-full z-10 bg-white"
               ></motion.div>
-              Effectively monetize all
+              {t("Effectively monetize all")}
             </motion.span>{" "}
             <motion.span
               variants={opacityVariant}
@@ -109,9 +112,9 @@ export default function Hero() {
                 variants={textAnim}
                 className="absolute hidden lg:block w-full h-full z-10 bg-white"
               ></motion.div>
-              types and{" "}
+              {t("types and")}{" "}
               <span className="lg:bg-primary-gradient bg-primary font-semibold inline-block text-transparent bg-clip-text">
-                sources of
+                {t("sources of")}
               </span>{" "}
             </motion.span>
             <motion.span
@@ -124,7 +127,7 @@ export default function Hero() {
               ></motion.div>
               <span className=" font-semibold text-primary bg-clip-text">
                 {" "}
-                traffic
+                {t("traffic")}
               </span>
             </motion.span>
           </motion.div>
@@ -136,7 +139,7 @@ export default function Hero() {
               variants={textAnim}
               className="absolute w-full h-full z-10 bg-white"
             ></motion.div>
-            Start earning today
+            {t("Start earning today")}
           </motion.span>
           <motion.div
             className="relative lg:block w-fit mx-auto lg:mx-0 overflow-hidden"
@@ -146,13 +149,13 @@ export default function Hero() {
               variants={textAnim}
               className="absolute w-full h-full z-10 bg-white"
             ></motion.div>
-            <Link href="/" className={styles.btn}>
-              <div className=" transition-all duration-350 group-hover:translate-x-0 translate-x-[-100%] flex px-[50px] flex-wrap content-center font-light text-[25px] justify-center absolute inset-0 w-full h-full">
-                {" >"}
-              </div>
-              <span className="block transition-all duration-350 group-hover:translate-x-[1000%]">
-                Join Now
-              </span>
+            <Link
+              href="https://hqtraff.affise.com/v2/sign/up"
+              rel="noreferrer"
+              target="_blank"
+              className={styles.btn}
+            >
+              {t("Join Now")}
             </Link>
           </motion.div>
           <motion.span
@@ -163,8 +166,16 @@ export default function Hero() {
               variants={textAnim}
               className="absolute w-full h-full z-10 bg-white"
             ></motion.div>
-            Contact our manager after registration and
-            <br /> get high rates on all offers.
+            {t("Contact our")}{" "}
+            <a
+              href="https://t.me/hqtraff_support"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {t("manager")}
+            </a>{" "}
+            {t("after registration and")}
+            <br /> {t("get high rates on all offers.")}
           </motion.span>
         </motion.div>
         <motion.div

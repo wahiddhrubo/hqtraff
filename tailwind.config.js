@@ -10,6 +10,8 @@ module.exports = {
         hero: "linear-gradient(283.37deg, #554F55 0.81%, #22181A 99.05%)",
         "primary-gradient":
           " linear-gradient(96.86deg, #206FE8 26.86%, #4BA0FF 78.22%)",
+        "reverse-primary-gradient":
+          " linear-gradient(296.86deg, #206FE8 26.86%, #4BA0FF 78.22%)",
         overlay: " linear-gradient(89.9deg, #1A1A1A 1.18%, #626262 99.92%)",
         "overlay-dark":
           " linear-gradient(99.69deg, #1A1A1A 13.79%, #626262 102.4%)",

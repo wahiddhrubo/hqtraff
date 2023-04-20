@@ -1,0 +1,143 @@
+export const uk = {
+  Home: "Home",
+  "Who Are We?": "Who Are We",
+  "Why Chose Us": "Why Chose Us",
+  "Our Reliable Partners": "Our Reliable Partners",
+  "Our Services Partners": "Our Services Partners",
+  "Sign In": "Sign In",
+  "Sign Up": "Sign Up",
+  RU: "RU",
+  "Effectively monetize all": "Ефективно монетизувати всі",
+  "types and": "типи та",
+  "sources of": "джерела",
+  traffic: "трафіку",
+  "Start earning today": "Почніть заробляти сьогодні",
+  "Join Now": "Приєднуйтесь зараз",
+
+  "Contact our": "Зв'яжіться з нашим ",
+  manager: "менеджером",
+  "after registration and": "після реєстрації ",
+  "get high rates on all offers.": "та отримайте високі.",
+
+  "Who we are?": "Хто ми ",
+  "HQtraff is an affiliate program in the gambling vertical with its own exclusive offers and more, founded by an arbitrage team with extensive experience and expertise, which they are ready to share with their partners.":
+    "HQtraff - це партнерська програма у вертикалі азартних ігор із власними ексклюзивними пропозиціями та багатьом іншим, заснована арбітражною командою з великим досвідом і знаннями, якими вони готові поділитися зі своїми партнерами",
+  "Why Chose us?": "Чому обрали нас",
+  "Own products in Latam and CIS": "Власні продукти в Латамі та СНД",
+  "Stable Payments": "Стабільні платежі",
+  "Help at all stages of launch for beginners":
+    "Допомога на всіх етапах запуску для початківців",
+  "Free creatives": "Вільні творці",
+  "Free apps for efficient strait":
+    "Безкоштовні додатки для ефективного проливання",
+  "Strong support of personal managers":
+    "Сильна підтримка персональних менеджерів",
+  "Only converting offers": "Тільки конвертуючі пропозиції",
+  "Easy integration with any trackers":
+    "Проста інтеграція з будь-якими трекерами",
+  "Our reliable partners": "Наші надійні партнери",
+  "Reviews from our partners": "Відгуки наших партнерів",
+  "We have been working with HQtraff since  2020 and are very satisfied with our cooperation. The guys have high-quality traffic that pays off, HQtraff is highly recommended!":
+    "Ми працюємо з HQtraff з 2020 року і дуже задоволені нашою співпрацею. У хлопців якісний трафік, який окупається, HQtraff дуже рекомендуємо",
+  "We have been working with HQtraff for a very long time, we approach our work	creatively and responsibly. Only positive	impression about our work, our products	are available in pp for one of the best conditions on the market. We will be happy to continue working with you.":
+    "Ми працюємо з HQtraff протягом дуже довгий час, ми підходимо до нашої роботи творчо та відповідально. Тільки позитивне враження про нашу роботу, наші продукти доступні в пп за одними з найкращих умов на ринку. Ми будемо раді продовжити співпрацю з Вами",
+  "Cooperation with HQtraff means pleasant and high-quality communication and fulfillment of all agreements. The guys always know what is needed to achieve our common goal and work fruitfully for the result. it’s a pleasure to work with them and see them develop from an arbitrage team into a full-fledged affiliate program. ":
+    "Співпраця з HQtraff - це приємне і якісне спілкування та виконання всіх домовленостей. Хлопці завжди знають, що потрібно для досягнення нашої спільної мети і плідно працюють на результат. з ними приємно працювати і бачити, як з арбітражної команди вони перетворюються на повноцінну партнерську програму",
+  "A reliable tam, we have know the guys for a long time, they have extensive experience in the industry.":
+    "Надійна тама, ми давно знаємо хлопців, у них великий досвід роботи в галузі",
+  "Always happy to work with them.": "Завжди раді працювати з ними",
+  "Our Service partners": "Наши партнеры по оказанию услуг",
+  Adheart: "Adheart",
+  "Promo code": "Промокод",
+  "Adheart is a service for collecting and analyzing advertising creatives on the Fb network and related platforms. AdHeart is currently simply irreplaceable due to its price and quality of service.":
+    "Adheart - це сервіс для збору та аналізу рекламних креативів у мережі Fb і пов'язаних з нею платформах. Нині AdHeart просто незамінний завдяки своїй ціні та якості послуг",
+  "-15% on the first payment": "-15% на первый платеж",
+  HQTRAFF: "HQTRAFF",
+  "Go to the": "Перейти на",
+  Site: "Сайт",
+  "Adspect ": "Adspect ",
+  "Promo code": "Промокод",
+  "Go to the": "Перейти на",
+  Site: "Сайт",
+  "Adspect is a cloaking service. Based on JS fingerprinting and VLA machine learning with built-in white generators. Includes several competing services and a REST API for automation.":
+    "Adspect - это сервис маскировки. Основан на JS fingerprinting и машинном обучении VLA со встроенными генераторами белого цвета. Включает несколько конкурирующих сервисов и REST API для автоматизации",
+  "-15% on the first payment": "-15% на первый платеж",
+  HQTRAFF: "HQTRAFF",
+  Adspy: "Adspy",
+  "Free on the first payment": "Безкоштовно при першому платежі",
+  "Promo code": "Промокод",
+  "Go to the": "Перейти на",
+  Site: "Сайт",
+  "AdSpy is the largest ad database in the world.":
+    "AdSpy - це найбільша база даних оголошень у світі",
+  HQTRAFF: "HQTRAFF",
+  "Cloaking house": "Cloaking house",
+  "Promo code": "Промокод",
+  "Go to the": "Go to the",
+  Site: "Site",
+  "Cloud service for filtering unwanted traffic and protection from bans. Traffic filtering using Machine Learning technologies. Easy integration in two minutes!":
+    "Хмарний сервіс для фільтрації небажаного трафіку та захисту від заборон. Фільтрація трафіку з використанням технологій машинного навчання. Легка інтеграція за дві хвилини",
+  "-30% on the first payment": "-30% на перший платіж",
+  HQTRAFF: "HQTRAFF",
+  Dolphin: "Dolphin",
+  "Promo code": "Промокод",
+  "Go to the": "Перейти на",
+  Site: "Сайт",
+  "Dolphin is a service for automating work. Manage all accounts from one tab, comment moderation, ad autofill and teamwork":
+    "Хмарний сервіс для фільтрації небажаного трафіку та захисту від заборон. Фільтрація трафіку з використанням технологій машинного навчання. Проста інтеграція за дві хвилини",
+  "-20% on the first payment": "-30% на перший платіж",
+  HQTRAFF: "HQTRAFF",
+  "Dolphin{anty}": "Dolphin{anty",
+  "Promo code": "Промокод",
+  "Go to the": "Перейти на",
+  Site: "Сайт",
+  "Dolphin{anty} is a reliable and convenient antidetect browser with a large number of substitutions. Automation of processes and the possibility of teamwork.":
+    "Dolphin{anty} - надійний і зручний антидетекторний браузер з великою кількістю замін. Автоматизація процесів і можливість командної роботи",
+  "-20% on the first payment": "-20% на перший платіж",
+  HQTRAFF: "HQTRAFF",
+  "EPN.net": "EPN.net",
+  "Promo code": "Промокод",
+  "Go to the": "Перейти на",
+  Site: "Сайт",
+  "Virtual cards 18 BIN of American banks, fit perfectly with advertising cabinets, keep a high span. Free cards in any quantity, transparent commissions - from 2%, team access, auto-replenishment.":
+    "Віртуальні картки 18 BIN американських банків, прекрасно вписуються в рекламні вітрини, тримають високий проліт. Безкоштовні картки в будь-якій кількості, прозорі комісії - від 2%, командний доступ, автопоповнення",
+  "-20% on the first payment": "-20% на перший платіж",
+  HQTRAFF: "HQTRAFF",
+  1: "1",
+  "Join and earn with us!": "Приєднуйтесь і заробляйте разом із нами",
+  "If you are a webmaster or an advertiser looking for a reliable network for cooperation, we are glad to welcome you to our team.":
+    "Якщо ви вебмайстер або рекламодавець, який шукає надійну мережу для співпраці, ми раді вітати вас у нашій команді",
+  "Contact Us": "Зв'язатися з нами",
+  "Web Masters": "Веб-майстри",
+  Advertisers: "Рекламодавці",
+  "Head of Affiliate": "Керівник відділу по роботі з партнерами",
+  Support: "Підтримка",
+  HQtraff_Egor: "HQ_Support",
+  HQ_Support: "HQtraff_Egor",
+  Support: "Підтримка",
+  HQ_Support: "HQ_Support",
+  Language: "Мова",
+  Navigation: "Навігація",
+  RU: "RU",
+  Home: "Головна",
+  EN: "EN",
+  "Who Are We?": "Хто ми",
+  UA: "UA",
+  "Why Chose Us": "Чому обирають нас",
+  "Our Reliable Partners": "Наші надійні партнери",
+  "Our Services Partners": "Наші партнери з надання послуг",
+  "all right reserved": "усі права захищені",
+  "hqtraffpartners@gmail.com": "hqtraffpartners@gmail.com",
+  "An indispensable set of tools for working with advertising":
+    "Незамінний набір інструментів для роботи з рекламою",
+  "Indigo is an anti-detect browser for comfortable and safe work of solos and teams with all types of anti-fraud systems.":
+    "Indigo — це антидетекторний браузер для комфортної та безпечної роботи соло та команд з усіма типами систем захисту від шахрайства.",
+  "iRent Market is a bot for renting applications in the AppStore.":
+    "iRent Market — бот для оренди додатків в AppStore.",
+  "Multifunctional PWA app builder for any vertical":
+    "Багатофункціональний конструктор програм PWA для будь-якої галузі",
+  "Keitaro is a universal tracker for online marketing. Work without cookies, reports based on 30+ metrics, domain parking, teamwork and many other options for profitable work.":
+    "Keitaro — універсальний трекер для онлайн-маркетингу. Робота без куків, звіти на основі 30+ показників, паркування домену, командна робота та багато інших опцій для прибуткової роботи.",
+  "Individual proxies for solving any problems":
+    "Індивідуальні довіреності для вирішення будь-яких проблем",
+};
