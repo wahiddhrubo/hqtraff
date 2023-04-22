@@ -22,7 +22,7 @@ export default function Home() {
   const lang = [
     { id: 1, text: "RU", value: "russian" },
     { id: 2, text: "EN", value: "english" },
-    { id: 3, text: "UK", value: "UK" },
+    { id: 3, text: "UA", value: "Uk" },
   ];
   const socialHandler = [
     { id: 1, img: "/images/ig.svg", link: "/" },

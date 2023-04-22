@@ -10,13 +10,14 @@ function Navbar({ menu }) {
   console.log(i18n.language);
   const styles = {
     wrapper:
-      "lg:px-[10px] hidden top-[32px] absolute z-[10] text-[#fff] lg:flex w-full ",
-    logoDiv: "lg:ml-auto mr-auto ",
-    logo: "",
-    menu: "mx-auto lg:flex flex-wrap content-center gap-[18px] hidden  ",
+      "lg:px-[10px] hidden top-[32px] absolute gap-5 z-[10] text-[#fff] lg:flex w-full ",
+    logoDiv: "lg:ml-auto grid place-items-center mr-auto ",
+    logo: "my-auto h-fit ",
+    menu: "mx-auto lg:flex flex-wrap content-center gap-[14px]  hidden  ",
     link: " text-[18px] h-fit mx-auto hover:scale-[.95] hover:text-[#d68d8d] transition-all",
     mobileNav: "mt-[-40px] lg:hidden overflow-hidden",
-    btnDiv: "lg:flex flex-wrap content-center hidden mr-auto gap-[20px]",
+    btnDiv:
+      "lg:flex w-[225px] flex-wrap content-center hidden mr-auto gap-[20px]",
     mobileLogo: "absolute top-10 left-[8%] z-10",
     btn: "h-fit my-auto",
   };
@@ -28,7 +29,7 @@ function Navbar({ menu }) {
             <Image
               src="/images/logo.svg"
               width={180}
-              height={70}
+              height={80}
               className={styles.logo}
             />
           </Link>
@@ -36,7 +37,7 @@ function Navbar({ menu }) {
         <div className={styles.menu}>
           {menu.map((m) => (
             <a key={m.id} href={m.link} className={styles.link}>
-              {m.text}
+              {t(m.text)}
             </a>
           ))}
         </div>
@@ -62,16 +63,16 @@ function Navbar({ menu }) {
             id=""
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue={i18n.language}
-            className="bg-primary w-[45px] h-[45px] py-[8px] text-white rounded-full"
+            className="bg-transparent w-[45px] h-[45px] py-[8px] text-white rounded-full"
           >
             🌐
-            <option value="EN" className="bg-transparent">
+            <option value="EN" className="text-black">
               EN
             </option>
-            <option value="UK" className="bg-transparent">
-              UK
+            <option value="UA" className="text-black">
+              UA
             </option>
-            <option value="RU" className="bg-transparent">
+            <option value="RU" className="text-black">
               RU
             </option>
           </select>
@@ -96,16 +97,16 @@ function Navbar({ menu }) {
             id=""
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue={i18n.language}
-            className="bg-primary w-[45px] h-[45px] py-[8px] text-white rounded-full"
+            className=" text-[12px] w-[45px] bg-transparent h-[45px] py-[8px] text-white rounded-full"
           >
             🌐
-            <option value="EN" className="bg-transparent">
+            <option value="EN" className="text-black">
               EN
             </option>
-            <option value="UK" className="bg-transparent">
-              UK
+            <option value="UA" className="text-black">
+              UA
             </option>
-            <option value="RU" className="bg-transparent">
+            <option value="RU" className="text-black">
               RU
             </option>
           </select>

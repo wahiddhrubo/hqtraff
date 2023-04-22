@@ -20,7 +20,7 @@ export default function Partners() {
   };
   const textAnim = {
     anim: {
-      x: "100%",
+      x: "105%",
       transition: {
         // delay: 0.3,
         duration: 0.5,
@@ -105,7 +105,7 @@ export default function Partners() {
           whileInView="anim"
           className="absolute w-full h-full z-10 bg-white"
         ></motion.div>
-        {t("Our reliable partners")}:
+        {t("Our Reliable Partners")}:
       </div>
       <div className="relative h-[150px] overflow-hidden">
         <motion.div

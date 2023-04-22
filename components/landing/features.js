@@ -5,7 +5,7 @@ export default function Features() {
   const { t } = useTranslation();
   const textAnim = {
     anim: {
-      x: "100%",
+      x: "105%",
       transition: {
         // delay: 0.3,
         duration: 0.5,
@@ -71,15 +71,15 @@ export default function Features() {
   ];
   const styles = {
     wrapper:
-      "relative lg:h-[815px] text-center text-white text-[16px] grid place-items-center ",
+      "relative xl:h-[815px] text-center text-white text-[16px] grid place-items-center ",
     bgImgDiv: "absolute w-full h-full ",
     heading:
       "lg:text-[48px] relative mx-auto   w-fit overflow-hidden  text-[32px] font-semibold lg:leading-[82px] lg:mb-[16px] mt-[52px] ",
     bgImg: "w-full object-cover h-full ",
     overlay: "absolute w-full bg-overlay h-full opacity-90 z-[5] ",
     flexbox:
-      "gap-[20px] mb-[52px] mt-[16px] lg:m-0 w-full flex flex-wrap mx-auto justify-center ",
-    fea: "bg-[#1A1A1A] flex flex-wrap w-[40%] text-[10px] lg:text-[16px] px-3 py-5 lg:py-0 flex-wrap content-center justify-center lg:px-[30px] lg:w-[250px] lg:h-[250px] rounded-[5px] ",
+      "gap-[20px] mb-[52px] lg:mb-[32px] mt-[16px] lg:m-0 w-full flex flex-wrap mx-auto justify-center ",
+    fea: "bg-[#1A1A1A]  flex flex-wrap w-[40%] text-[10px] lg:text-[16px] px-3 py-5 lg:py-0 flex-wrap content-center justify-center lg:px-[30px] lg:w-[250px] lg:h-[250px] rounded-[5px] ",
     img: "mx-auto block w-[40%] lg:w-[95px] mb-3 lg:mb-[35px]",
   };
   return (

@@ -7,7 +7,7 @@ export default function Hero() {
   const { t, i18n } = useTranslation();
   const styles = {
     wrapper:
-      "relative lg:h-[750px] text-white text-[16px] grid place-items-center ",
+      "relative xl:h-[750px] lg:h-[625px] text-white text-[16px] grid place-items-center ",
     bgImgDiv: "absolute w-full h-full ",
     bgImg: "w-full object-cover h-full ",
     overlay: "absolute w-full bg-hero h-full opacity-90 z-[5] ",
@@ -15,7 +15,8 @@ export default function Hero() {
       "lg:px-[120px] mb-[50px] gap-[50px] relative my-auto flex-wrap lg:flex-nowrap flex z-10",
     textDiv:
       " lg:w-[820px] mt-[120px] lg:mt-0 p-5 lg:p-0 text-center lg:text-left ",
-    heading: "lg:text-[58px] text-[32px] lg:leading-[82px] mb-[16px] ",
+    heading:
+      "xl:text-[58px] lg:text-[42px] text-[32px] xl:leading-[82px] mb-[16px] ",
     btn: "block relative overflow-hidden  block transition-all duration-[550] hover:bg-reverse-primary-gradient px-[50px] mx-auto lg:mx-0 my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
     imgDiv: "p-8 lg:p-0",
     img: "",
@@ -103,7 +104,7 @@ export default function Hero() {
                 className="absolute hidden lg:block w-full h-full z-10 bg-white"
               ></motion.div>
               {t("Effectively monetize all")}
-            </motion.span>{" "}
+            </motion.span>
             <motion.span
               variants={opacityVariant}
               className="relative lg:block  overflow-hidden"
@@ -171,6 +172,7 @@ export default function Hero() {
               href="https://t.me/hqtraff_support"
               rel="noreferrer"
               target="_blank"
+              className="text-primary hover:text-white"
             >
               {t("manager")}
             </a>{" "}

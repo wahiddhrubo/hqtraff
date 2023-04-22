@@ -21,7 +21,7 @@ i18n
           ...ru,
         },
       },
-      UK: {
+      UA: {
         translations: {
           ...uk,
         },

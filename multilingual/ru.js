@@ -1,9 +1,9 @@
 export const ru = {
   Home: "Home",
-  "Who Are We?": "Who Are We?",
-  "Why Chose Us": "Why Chose Us",
-  "Our Reliable Partners": "Our Reliable Partners",
-  "Our Services Partners": "Our Services Partners",
+  "Who Are We?": "Кто мы такие",
+  "Why Chose Us": "Почему выбирают нас",
+  "Our Reliable Partners": "Наши надежные партнеры",
+  "Our Services Partners": "Наши партнеры по оказанию услуг",
   "Sign In": "Sign In",
   "Sign Up": "Sign Up",
   RU: "RU",
@@ -11,29 +11,28 @@ export const ru = {
   "types and": " типы и ",
   "sources of": "источники ",
   traffic: "трафика",
-  "Start earning today": "Начните зарабатывать сегодня",
+  "Start earning today": "Начни зарабатывать уже сегодня.",
   "Join Now": "Присоединяйтесь сейчас",
-  "Contact our": "Свяжитесь с ",
+  "Contact our": "Свяжись с нашим ",
   manager: "менеджером",
-  "after registration and": "нашим  после регистрации и ",
-  "get high rates on all offers.":
-    "получите высокие ставки на все предложения.",
-  "Who we are?": "Кто мы?",
+  "after registration and": "после регистрации и ",
+  "get high rates on all offers.": "получай высокие ставки на все оффера.",
+  "Who we are?": "Кто мы такие",
   "HQtraff is an affiliate program in the gambling vertical with its own exclusive offers and more, founded by an arbitrage team with extensive experience and expertise, which they are ready to share with their partners.":
-    "HQtraff - это партнерская программа в вертикали азартных игр с собственными эксклюзивными предложениями и многим другим, основанная арбитражной командой с большим опытом и знаниями, которыми они готовы поделиться со своими партнерами.",
-  "Why Chose us?": "Почему выбрали нас?",
-  "Own products in Latam and CIS": "Собственные продукты в Латаме и СНГ",
-  "Stable Payments": "Стабильные платежи",
+    "HQtraff - партнерская программа в gambling-вертикали с собственными эксклюзивными офферами и не только, основанная арбитражной командой с большим опытом и экспертизой, которой готовы делиться со своими партнерами.",
+  "Why Chose us?": "Почему выбирают нас?",
+  "Own products in Latam and CIS": "собственные продукты на Латам и СНГ",
+  "Stable Payments": "стабильные выплаты",
   "Help at all stages of launch for beginners":
-    "Помощь на всех этапах запуска для начинающих",
-  "Free creatives": "Свободные творцы",
+    "помощь на всех этапах запуска для новичков",
+  "Free creatives": "бесплатные креативы",
   "Free apps for efficient strait":
-    "Бесплатные приложения для эффективного пролива",
+    "бесплатные приложения для эффективного пролива",
   "Strong support of personal managers":
-    "Сильная поддержка персональных менеджеров",
-  "Only converting offers": "Только конвертирующие предложения",
-  "Easy integration with any trackers": "Простая интеграция с любыми трекерами",
-  "Our reliable partners:": "Наши надежные партнеры:",
+    "сильная поддержка персональных менеджеров",
+  "Only converting offers": "только конвертящие офферы",
+  "Easy integration with any trackers": "простая интеграция с любыми трекерами",
+  "Наши надежные партнеры:": "Наши надежные партнеры:",
   "Reviews from our partners": "Отзывы наших партнеров",
   "We have been working with HQtraff since  2020 and are very satisfied with our cooperation. The guys have high-quality traffic that pays off, HQtraff is highly recommended!":
     "Мы работаем с HQtraff с 2020 года и очень довольны нашим сотрудничеством. У ребят качественный трафик, который окупается, HQtraff очень рекомендуем!",
@@ -48,7 +47,7 @@ export const ru = {
   Adheart: "Adheart",
   "Promo code:": "Промокод",
   "Adheart is a service for collecting and analyzing advertising creatives on the Fb network and related platforms. AdHeart is currently simply irreplaceable due to its price and quality of service.":
-    "Adheart - это сервис для сбора и анализа рекламных креативов в сети Fb и связанных с ней платформах. В настоящее время AdHeart просто незаменим благодаря своей цене и качеству услуг.",
+    "Adheart — это сервис для сбора и аналитики рекламных креативов в сети Fb, и сопутствующих ему платформ.. AdHeart на данный момент просто незаменим за счет своей цены и качества сервиса.",
   "-15% on the first payment": "-15% на первый платеж",
   HQTRAFF: "HQTRAFF",
   "Go to the": "Перейти на",
@@ -58,7 +57,7 @@ export const ru = {
   "Go to the": "Перейти на",
   Site: "Сайт",
   "Adspect is a cloaking service. Based on JS fingerprinting and VLA machine learning with built-in white generators. Includes several competing services and a REST API for automation.":
-    "Adspect - это сервис маскировки. Основан на JS fingerprinting и машинном обучении VLA со встроенными генераторами белого цвета. Включает несколько конкурирующих сервисов и REST API для автоматизации.",
+    "Adspect — сервис клоакинга. На базе JS-фингерпринтинга и машинного обучения VLA со встроенными генераторами вайтов. Включает в себя несколько конкурирующих сервисов и REST API для автоматизации",
   "-15% on the first payment": "-15% на первый платеж",
   HQTRAFF: "HQTRAFF",
   Adspy: "Adspy",
@@ -67,14 +66,14 @@ export const ru = {
   "Go to the": "Перейти на",
   Site: "Сайт",
   "AdSpy is the largest ad database in the world.":
-    "AdSpy - это самая большая база данных объявлений в мире.",
+    "AdSpy — крупнейшая в мире база данных объявлений.",
   HQTRAFF: "HQTRAFF",
   "Cloaking house": "Cloaking house",
   "Promo code:": "Промокод",
   "Go to the": "Go to the",
   Site: "Site",
   "Cloud service for filtering unwanted traffic and protection from bans. Traffic filtering using Machine Learning technologies. Easy integration in two minutes!":
-    "Облачный сервис для фильтрации нежелательного трафика и защиты от запретов. Фильтрация трафика с использованием технологий машинного обучения. Простая интеграция за две минуты!",
+    "Облачный сервис для фильтрации нежелательного трафика и защиты от банов. Фильтрация трафика по технологиям Machine Learning. Простая интеграция за две минуты!",
   "-30% on the first payment": "-30% на первый платеж",
   HQTRAFF: "HQTRAFF",
   Dolphin: "Dolphin",
@@ -82,15 +81,15 @@ export const ru = {
   "Go to the": "Перейти на",
   Site: "Сайт",
   "Dolphin is a service for automating work. Manage all accounts from one tab, comment moderation, ad autofill and teamwork":
-    "Облачный сервис для фильтрации нежелательного трафика и защиты от запретов. Фильтрация трафика с использованием технологий машинного обучения. Простая интеграция за две минуты!",
+    "Dolphin — сервис для автоматизации работы. Управление всеми аккаунтами из одной вкладки, модерация комментариев, автозалив рекламы и командная работа",
   "-20% on the first payment": "-30% на первый платеж",
   HQTRAFF: "HQTRAFF",
   "Dolphin{anty}": "Dolphin{anty}",
   "Promo code:": "Промокод",
-  "Go to the": "Перейти на",
-  Site: "Сайт",
+  "Go To The Site": "Перейти на Сайт",
+
   "Dolphin{anty} is a reliable and convenient antidetect browser with a large number of substitutions. Automation of processes and the possibility of teamwork.":
-    "Dolphin{anty} - надежный и удобный антидетекторный браузер с большим количеством замен. Автоматизация процессов и возможность командной работы.",
+    "Dolphin{anty} — надёжный и удобный антидетект браузер с большим количеством подмен. Автоматизация процессов и возможность командной работы.",
   "-20% on the first payment": "-20% на первый платеж",
   HQTRAFF: "HQTRAFF",
   "EPN.net": "EPN.net",
@@ -98,7 +97,7 @@ export const ru = {
   "Go to the": "Перейти на",
   Site: "Сайт",
   "Virtual cards 18 BIN of American banks, fit perfectly with advertising cabinets, keep a high span. Free cards in any quantity, transparent commissions - from 2%, team access, auto-replenishment.":
-    "Виртуальные карты 18 BIN американских банков, прекрасно вписываются в рекламные витрины, держат высокий пролет. Бесплатные карты в любом количестве, прозрачные комиссии - от 2%, командный доступ, автопополнение.",
+    "Виртуальные карты 18 BIN американских банков, отлично вяжутся с рекламными кабинетами, держат высокий спенд.",
   "-20% on the first payment": "-20% на первый платеж",
   HQTRAFF: "HQTRAFF",
   1: "1",
@@ -119,23 +118,23 @@ export const ru = {
   RU: "RU",
   Home: "Главная",
   EN: "EN",
-  "Who Are We?": "Кто мы?",
+  "Who Are We?": "Кто мы такие",
   UA: "UA",
   "Why Chose Us": "Почему выбирают нас",
   "Our Reliable Partners": "Наши надежные партнеры",
-  "Our Services Partners": "Наши партнеры по оказанию услуг",
+  "Our Services Partners": "Наши сервис партнеры",
   "all right reserved": "все права защищены",
   "hqtraffpartners@gmail.com": "hqtraffpartners@gmail.com",
   "An indispensable set of tools for working with advertising":
     "Незаменимый набор инструментов для работы с рекламой",
   "Indigo is an anti-detect browser for comfortable and safe work of solos and teams with all types of anti-fraud systems.":
-    "Indigo — браузер-антидетект для комфортной и безопасной работы соло и команд со всеми видами антифрод-систем.",
+    "Indigo — антидетект браузер для комфортной и безопасной работы соло и команд со всеми типами антифрод систем",
   "iRent Market is a bot for renting applications in the AppStore.":
-    "iRent Market — бот для аренды приложений в AppStore.",
+    "iRent Market — это бот для аренды приложений в AppStore.",
   "Multifunctional PWA app builder for any vertical":
-    "Многофункциональный конструктор приложений PWA для любой вертикали",
+    "Многофункциональный конструктор PWA-приложений под любую вертикаль",
   "Keitaro is a universal tracker for online marketing. Work without cookies, reports based on 30+ metrics, domain parking, teamwork and many other options for profitable work.":
-    "Keitaro — универсальный трекер для интернет-маркетинга. Работа без куки, отчеты по 30+ метрикам, парковка домена, командная работа и множество других опций для выгодной работы.",
+    "Keitaro — универсальный трекер для интернет-маркетинга. Работа без cookies, отчеты на основе 30+ метрик, парковка доменов, работа в команде и многие другие опции для профитной работы.",
   "Individual proxies for solving any problems":
     "Индивидуальные прокси для решения любых задач",
 };

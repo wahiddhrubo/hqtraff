@@ -1,8 +1,13 @@
 import { useState, useEffect, useContext } from "react";
 import Link from "next/link";
 import styles from "./Hamburger.module.css";
+import { useTranslation } from "react-i18next";
 
 export default function Hamburger({ menu }) {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (ln) => {
+    i18n.changeLanguage(ln);
+  };
   return (
     <div className={styles.navigation}>
       <input
@@ -24,7 +29,7 @@ export default function Hamburger({ menu }) {
             <li key={m.id} className={styles.navigation__item}>
               <span href="#">
                 <Link href={m.link} className={styles.navigation__link}>
-                  <span className="">{m.text}</span>
+                  <span className="">{t(m.text)}</span>
                 </Link>
               </span>
             </li>

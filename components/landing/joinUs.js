@@ -57,7 +57,7 @@ export default function Partners() {
       "gap-[20px] justify-center mb-[30px] w-full flex flex-wrap mx-auto  ",
     team: "relative bg-[#1A1A1A] py-[25px] text-[13px] px-[25px] w-[450px]  rounded-[5px] ",
     reviewImg: "absolute bottom-0 inset-x-0 mt-auto mx-auto w-fit h-fit",
-    btn: "block relative overflow-hidden  block transition-all duration-[550] hover:bg-reverse-primary-gradient px-[50px] mx-auto lg:mx-0 my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
+    btn: "block relative overflow-hidden  block transition-all duration-[550] hover:bg-reverse-primary-gradient px-[50px] mx-auto  my-[16px] py-[15px] bg-primary-gradient font-semibold w-fit rounded-[5px] ",
     img: "mt-auto",
     teamTitle: "font-semibold mb-[30px] text-[28px] ",
     member: "flex  mb-[42px] gap-[16px] ",
@@ -71,7 +71,7 @@ export default function Partners() {
 
   const textAnim = {
     anim: {
-      x: "100%",
+      x: "105%",
       transition: {
         // delay: 0.3,
         duration: 0.5,

@@ -32,7 +32,7 @@ export default function About() {
   };
   const textAnim = {
     anim: {
-      x: "100%",
+      x: "105%",
       transition: {
         // delay: 0.3,
         duration: 0.5,
