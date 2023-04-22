@@ -97,10 +97,10 @@ export default function Partners() {
         )}
       </div>
       <div className={styles.flexbox}>
-        {teams.map((t) => (
-          <div key={t.id} className={styles.team}>
-            <div className={styles.teamTitle}>{t.name}</div>
-            {t.team.map((tm) => (
+        {teams.map((tms) => (
+          <div key={tms.id} className={styles.team}>
+            <div className={styles.teamTitle}>{t(tms.name)}</div>
+            {tms.team.map((tm) => (
               <div key={tm.id} className={styles.member}>
                 <div className={styles.teamImg}>
                   <Image

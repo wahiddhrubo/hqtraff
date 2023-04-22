@@ -48,7 +48,7 @@ function Navbar({ menu }) {
             rel="noreferrer"
             className={styles.btn}
           >
-            Sign In{" "}
+            {t("Sign In")}{" "}
           </a>
           <a
             href="https://hqtraff.affise.com/v2/sign/up"
@@ -56,7 +56,7 @@ function Navbar({ menu }) {
             rel="noreferrer"
             className={styles.btn}
           >
-            Sign Up{" "}
+            {t("Sign Up")}{" "}
           </a>
           <select
             name=""
