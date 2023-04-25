@@ -1,6 +1,6 @@
 export const ru = {
   Home: "Home",
-  "Who Are We?": "Кто мы такие",
+  "Who Are We?": "Кmо мы maкue",
   "Why Chose Us": "Почему выбирают нас",
   "Our Reliable Partners": "Наши надежные партнеры",
   "Our Services Partners": "Наши партнеры по оказанию услуг",
@@ -17,7 +17,7 @@ export const ru = {
   manager: "менеджером",
   "after registration and": "после регистрации и ",
   "get high rates on all offers.": "получай высокие ставки на все оффера.",
-  "Who we are?": "Кто мы такие",
+  "Who we are?": "Кmо мы maкue",
   "HQtraff is an affiliate program in the gambling vertical with its own exclusive offers and more, founded by an arbitrage team with extensive experience and expertise, which they are ready to share with their partners.":
     "HQtraff - партнерская программа в gambling-вертикали с собственными эксклюзивными офферами и не только, основанная арбитражной командой с большим опытом и экспертизой, которой готовы делиться со своими партнерами.",
   "Why Chose us?": "Почему выбирают нас?",
@@ -119,7 +119,7 @@ export const ru = {
   RU: "RU",
   Home: "Главная",
   EN: "EN",
-  "Who Are We?": "Кто мы такие",
+  "Who Are We?": "Кmо мы maкue",
   UA: "UA",
   "Why Chose Us": "Почему выбирают нас",
   "Our Reliable Partners": "Наши надежные партнеры",
