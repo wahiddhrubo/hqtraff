@@ -130,6 +130,20 @@ export default function Partners() {
                     />
                     {tm.user}
                   </a>
+                  <a
+                    className={styles.link}
+                    href="mailto:support@hqtraff.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src="/images/email.svg"
+                      width={15}
+                      height={15}
+                      className={styles.icon}
+                    />
+                    Support
+                  </a>
                 </div>
               </div>
             ))}
