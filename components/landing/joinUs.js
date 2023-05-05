@@ -113,7 +113,9 @@ export default function Partners() {
                   </a>
                 </div>
                 <div className={styles.teamDetails}>
-                  <div className={styles.teamPos}>{tm.pos} </div>
+                  <a href="mailto:support@hqtraff.com">
+                    <div className={styles.teamPos}>{tm.pos} </div>
+                  </a>
                   <a
                     className={styles.link}
                     href={tm.link}
