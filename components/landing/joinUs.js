@@ -65,7 +65,7 @@ export default function Partners() {
     img: "my-auto",
     teamDetails: "",
     teamPos: "text-[16px] mb-2",
-    link: "flex gap-2",
+    link: "flex gap-2 my-2",
     icon: "",
   };
 
