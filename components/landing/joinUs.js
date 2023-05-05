@@ -103,12 +103,14 @@ export default function Partners() {
             {tms.team.map((tm) => (
               <div key={tm.id} className={styles.member}>
                 <div className={styles.teamImg}>
-                  <Image
-                    src={tm.img}
-                    width={52}
-                    height={52}
-                    className={styles.img}
-                  />
+                  <a href="mailto:support@hqtraff.com">
+                    <Image
+                      src={tm.img}
+                      width={52}
+                      height={52}
+                      className={styles.img}
+                    />
+                  </a>
                 </div>
                 <div className={styles.teamDetails}>
                   <div className={styles.teamPos}>{tm.pos} </div>

@@ -8,7 +8,7 @@ export const ru = {
   "Sign Up": "Регистрация",
   RU: "RU",
   "Effectively monetize all": "Эффективно монетизируй все ",
-  "types and": " виды ии ",
+  "types and": " виды и ",
   "sources of": "источники ",
   traffic: "трафика",
   "Start earning today": "Начни зарабатывать уже сегодня.",
@@ -36,13 +36,13 @@ export const ru = {
   "Наши надежные партнеры:": "Наши надежные партнеры:",
   "Reviews from our partners": "Отзывы наших партнеров",
   "We have been working with HQtraff since  2020 and are very satisfied with our cooperation. The guys have high-quality traffic that pays off, HQtraff is highly recommended!":
-    "Мы работаем с HQtraff с 2020 года и очень довольны нашим сотрудничеством. У ребят качественный трафик, который окупается, HQtraff очень рекомендуем!",
+    "С HQtraff работаем уже с 2020 года и очень довольны нашим сотрудничеством. У ребят качественный траф на разные гео. Если вам нужен траф, который окупается - вам к HQtraff, очень рекомендуем!",
   "We have been working with HQtraff for a very long time, we approach our work	creatively and responsibly. Only positive	impression about our work, our products	are available in pp for one of the best conditions on the market. We will be happy to continue working with you.":
-    "Мы работаем с HQtraff в течение очень долгое время, мы подходим к нашей работе  творчески и ответственно. Только положительное  впечатление о нашей работе, наши продукты  доступны в пп по одним из лучших условиях на рынке. Мы будем рады продолжить сотрудничество с Вами.",
+    "Работаем с HQtraff очень долго, подходят к своей работе креативно и ответственно. Только позитивные впечатления о нашей работе, наши продукты доступны в пп по одним из самых лучших условий на рынке. Будем рады и дальше работать вместе с вами",
   "Cooperation with HQtraff means pleasant and high-quality communication and fulfillment of all agreements. The guys always know what is needed to achieve our common goal and work fruitfully for the result. it’s a pleasure to work with them and see them develop from an arbitrage team into a full-fledged affiliate program. ":
-    "Сотрудничество с HQtraff - это приятное и качественное общение и выполнение всех договоренностей. Ребята всегда знают, что нужно для достижения нашей общей цели и плодотворно работают на результат. с ними приятно работать и видеть, как из арбитражной команды они превращаются в полноценную партнерскую программу.",
+    "Сотрудничество с HQtraff — это приятное и качественное общение и выполнение всех договоренностей. Ребята всегда знают, что нужно для достижения нашей общей цели и плодотворно работают на результат. Приятно сотрудничать с ними и видеть их развитие из арбитражной команды в полноценную партнёрскую программу.",
   "A reliable tam, we have know the guys for a long time, they have extensive experience in the industry.":
-    "Надежная тама, мы давно знаем ребят, у них большой опыт работы в отрасли.",
+    "Надежная команда, давно знаем ребят, имеют большой опыт в индустрии. Всегда рады сотрудничать с ними",
   "Always happy to work with them.": "Всегда рады работать с ними.",
   "Our Service partners:": "Наши партнеры по оказанию услуг:",
   Adheart: "Adheart",
@@ -131,9 +131,9 @@ export const ru = {
   "Indigo is an anti-detect browser for comfortable and safe work of solos and teams with all types of anti-fraud systems.":
     "Indigo — антидетект браузер для комфортной и безопасной работы соло и команд со всеми типами антифрод систем",
   "iRent Market is a bot for renting applications in the AppStore.":
-    "iRent Market — это бот для аренды приложений в AppStore.",
+    "Сервис по аренде и покупке iOS-приложений для азартных игр и ставок. Мы создаем веб-приложения iOS для FB, TT, In-App, UAC и других источников.",
   "Multifunctional PWA app builder for any vertical":
-    "Многофункциональный конструктор PWA-приложений под любую вертикаль",
+    "Сервис для создания PWA-приложений для Gambling, Betting, Dating, Nutra, Crypto и других ниш.",
   "Keitaro is a universal tracker for online marketing. Work without cookies, reports based on 30+ metrics, domain parking, teamwork and many other options for profitable work.":
     "Keitaro — универсальный трекер для интернет-маркетинга. Работа без cookies, отчеты на основе 30+ метрик, парковка доменов, работа в команде и многие другие опции для профитной работы.",
   "Individual proxies for solving any problems":
