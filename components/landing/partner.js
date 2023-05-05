@@ -122,20 +122,18 @@ export default function Partners() {
       description:
         "iRent Market is a bot for renting applications in the AppStore.",
       offer: "+20% to the account",
-      image: "/images/promo-10.svg",
+      image: "/images/promo-10.png",
       promo: "HQTRAFF",
       link: "https://irent.market/",
-      dark: true,
     },
     {
       id: "11",
       name: "PWA.market",
       description: "Multifunctional PWA app builder for any vertical",
       offer: "-15% on the first payment",
-      image: "/images/promo-11.svg",
+      image: "/images/promo-11.png",
       promo: "HQTRAFF-PWA",
       link: "https://pwa.market/",
-      dark: true,
     },
     {
       id: "12",
@@ -155,7 +153,6 @@ export default function Partners() {
       image: "/images/promo-13.png",
       promo: "HQTRAFF",
       link: "https://proxys.io/ru",
-      dark: true,
     },
   ];
   const styles = {
@@ -173,7 +170,7 @@ export default function Partners() {
     promoCodeDiv:
       "lg:w-[8%] w-full flex  justify-center content-center flex-wrap text-center",
     btnDiv:
-      "lg:w-[13%] w-full relative group overflow-hidden h-[52px] lg:h-full flex justify-center content-center rounded-[5px] flex-wrap bg-[#393939] font-semibold px-[32px] text-center ",
+      "lg:w-[13%] w-full transition-all duration-300 hover:bg-white hover:text-black relative group overflow-hidden h-[52px] lg:h-full flex justify-center content-center rounded-[5px] flex-wrap bg-[#393939] font-semibold px-[32px] text-center ",
   };
   const copyToClipBoard = (text) => {
     navigator.clipboard.writeText(text);
@@ -230,12 +227,7 @@ export default function Partners() {
             target="_blank"
             className={styles.btnDiv}
           >
-            <div className=" transition-all duration-350 group-hover:translate-x-0 translate-x-[-100%] flex px-[50px] flex-wrap content-center font-light text-[25px] justify-center absolute inset-0 w-full h-full">
-              {" >"}
-            </div>
-            <span className="block transition-all duration-350 group-hover:translate-x-[1000%]">
-              {t("Go To The Site")}
-            </span>
+            {t("Go To The Site")}
           </a>
         </motion.div>
       ))}

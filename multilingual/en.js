@@ -121,4 +121,8 @@ export const en = {
   "Our Services Partners": "Our Services Partners",
   "all right reserved": "all right reserved",
   "hqtraffpartners@gmail.com": "hqtraffpartners@gmail.com",
+  "iRent Market is a bot for renting applications in the AppStore.":
+    "Service for renting and buying iOS apps for Gambling & Betting. We create webview iOS apps for FB, TT, In-App, UAC and other sources",
+  "Multifunctional PWA app builder for any vertical":
+    "Service for creating PWA apps for Gambling, Betting, Dating, Nutra, Crypto and other niches.",
 };
