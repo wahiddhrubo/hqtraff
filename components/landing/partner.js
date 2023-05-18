@@ -118,7 +118,7 @@ export default function Partners() {
     },
     {
       id: "10",
-      name: "iRent",
+      name: "iRent.Market",
       description:
         "iRent Market is a bot for renting applications in the AppStore.",
       offer: "+20% to the account",
@@ -128,7 +128,7 @@ export default function Partners() {
     },
     {
       id: "11",
-      name: "PWA.market",
+      name: "PWA.Market",
       description: "Multifunctional PWA app builder for any vertical",
       offer: "-15% on the first payment",
       image: "/images/promo-11.png",

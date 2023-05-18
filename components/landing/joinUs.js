@@ -142,7 +142,7 @@ export default function Partners() {
                       height={15}
                       className={styles.icon}
                     />
-                    Support
+                    support@hqtraff.com
                   </a>
                 </div>
               </div>
